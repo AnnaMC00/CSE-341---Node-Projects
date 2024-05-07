@@ -1,3 +1,34 @@
 GET https://project1-x7xp.onrender.com/contacts/66358d775bfcccb3501b50a6
 
+### Get All
 GET http://localhost:3000/contacts/
+
+### Get Single
+GET http://localhost:3000/contacts/66358d775bfcccb3501b50a6
+
+### Create Contact
+POST http://localhost:3000/contacts/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Trinjnjnononoidad",
+    "lastName": "Herreionnononora",
+    "email": "valeria@gmaoononoil.com",
+    "favoriteColor": "Yellionnkoow",
+    "birthday": "22/01/165434999"
+}
+
+### Update Contact
+PUT http://localhost:3000/contacts/663a4d6d0f818c49bf5b4055 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Trinidad",
+    "lastName": "Mañana",
+    "email": "trinidad@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "16/02/1999"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/contacts/663a4df10f818c49bf5b4057 HTTP/1.1
