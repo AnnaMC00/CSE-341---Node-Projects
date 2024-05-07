@@ -2,6 +2,7 @@ const mongodb = require('../data/database');
 const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res) => {
+    //#swagger.tags=
     const result = await mongodb.getDatabase().db().collection('Contacts').find();
     result.toArray().then(contacts => {
         res.setHeader('Content-Type', 'application/json');
